@@ -1,0 +1,23 @@
+{
+  "name": "monorepo-demo",
+  "version": "1.0.0",
+  "description": "Monorepo setup using CRA and Turborepo",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev --parallel",
+    "lint": "turbo run lint"
+  },
+  "author": "Seaghan-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "turbo": "^1.2.1"
+  },
+  "dependencies": {
+    "@craco/craco": "^6.4.3"
+  }
+}

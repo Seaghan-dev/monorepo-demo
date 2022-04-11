@@ -1,0 +1,13 @@
+// for code completion using absolute imports in vs code
+{
+    "compilerOptions": {
+      "baseUrl": "./",
+      "jsx": "preserve",
+      "paths": {
+        // "@alias": ["path"],
+        "@app1/helpers/*": ["apps/app1/src/helpers/*"],
+        "@app2/helpers/*": ["apps/app2/src/helpers/*"]
+      }
+    },
+    "exclude": ["node_modules"]
+  }
